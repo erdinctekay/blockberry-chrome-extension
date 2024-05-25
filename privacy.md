@@ -18,8 +18,6 @@ Blockberry, simply checks the websites you have open in your tabs to handle 'web
 
 We may update our Privacy Statement from time to time. We will notify you of any changes by posting the new Privacy Statement on this page.
 
-We will let you know via a prominent notice on our Service, prior to the change becoming effective and update the "effective date" at the top of this Privacy Statement.
-
 You are advised to review this Privacy Statement periodically for any changes. Changes to this Privacy Statement are effective when they are posted on this page.
 
 ### Contact Us
