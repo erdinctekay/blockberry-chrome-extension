@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Blockberry - Focus Booster</title>
+  <link rel="stylesheet" type="text/css" href="../main.css">
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="line-height: 1.15; margin: 0;">
+      <lead>BLOCKBERRY</lead>
+      <br />
+      <small style="font-weight: 400; font-style: italic; letter-spacing: 2px; margin-top: -12px;">Focus Booster</small>
+    </h1>
+    <div class="switch">
+      <input type="checkbox" id="toggle-switch">
+      <label for="toggle-switch" class="slider"></label>
+    </div>
+    <div class="status-message">
+      <span id="status-message"></span>
+    </div>
+
+    <div class="sub-info">
+      <hr style="margin: 16px 0;">
+
+      <p style="margin-top: 0;">Current site:
+        <span id="url-display" style="font-weight: 500;"></span>
+      </p>
+      <button id="block-button" class="block-button"></button>
+      <br>
+    </div>
+    <!-- add link for options page -->
+    <div style="margin-bottom: -20px; margin-top: 20px;">
+      <a href="../options/options.html" class="options-link" target="_blank">Options</a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

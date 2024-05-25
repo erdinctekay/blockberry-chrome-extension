@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Blockberry Options</title>
+  <link rel="stylesheet" type="text/css" href="../main.css">
+  <link rel="stylesheet" type="text/css" href="options.css">
+</head>
+
+<body>
+  <div class="container">
+    <div style="width: 100%; text-align: center;"><img src="../../icons/icon-active-128.png" alt="Blockberry Logo"
+        style="width: 64px; height: 64px;"></div>
+    <h1 style="line-height: 1.15; margin-bottom: 30px; text-align: center;">
+      <lead>BLOCKBERRY</lead>
+      <br />
+      <small style="font-weight: 400; font-style: italic; letter-spacing: 2px; margin-top: -12px;">Focus Booster</small>
+    </h1>
+    <div class="status-message">&nbsp;</div>
+    <div class="form" style="color: var(--color-black); margin-top: 10px;">
+      <label for="blocked-websites" class="label" style="color: var(--color-black);">Blocked Websites: </label><br>
+      <textarea id="blocked-websites" class="textarea scrollable" style="resize: none;"></textarea><br>
+      <div style="display: flex; flex-direction: column;   text-align: right; width: 100%; margin-bottom: 20px;">
+        <small>Add each site to new line</small>
+        <small>*Wildcards allowed</small>
+      </div>
+      <button id="save-button" type="submit" class="button save-button">Save</button>
+    </div>
+    <!-- <div class="status-message">&nbsp;</div> -->
+  </div>
+  <script src="options.js"></script>
+</body>
+
+</html>

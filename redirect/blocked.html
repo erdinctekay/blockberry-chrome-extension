@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Blocked by Blockberry</title>
+  <link rel="stylesheet" type="text/css" href="../src/main.css">
+  <link rel="stylesheet" type="text/css" href="../src/options/options.css">
+</head>
+
+<body>
+  <div class="container">
+    <div style="width: 100%; text-align: center;"><img src="../icons/icon-active-128.png" alt="Blockberry Logo"
+        style="width: 64px; height: 64px;"></div>
+
+    <h1 style="line-height: 1.15; margin-bottom: 40px; text-align: center;">
+      <lead>BLOCKBERRY</lead>
+      <br />
+      <small style="font-weight: 400; font-style: italic; letter-spacing: 2px; margin-top: -12px;">Focus Booster</small>
+    </h1>
+
+    <h2 style="line-height: 1.15; margin-bottom: 10px; text-align: center;">
+      <i style="font-weight: 600;">blocked: </i>
+      <lead id="domain"
+        style="display: inline; text-align: center; font-weight: 300; text-decoration: underline; margin-bottom: -5px;">
+      </lead>
+    </h2>
+    <div
+      style="padding: 10px 20px; border-radius: 10px; background: white; color: var(--color-black); text-align: center; max-width: 320px; margin-bottom: 60px;">
+      <p style="font-weight: 400; font-size: .85rem;">If you need <b>access</b> to the site,
+        you can click Blockberry icon on the top right of your browser <br> and gently switch it off.
+      </p>
+      <a id="retry-anchor" style="display: none; position: absolute;">Click if not loaded back.</a>
+      <hr style="margin: 20px 0">
+      <p style="font-weight: 400; font-size: .85rem;">If you want to <b>unblock</b> this site from blocklist,<br>
+        just go <a href="/src/options/options.html" target="_blank">Blockberry Options</a> and remove it.
+      </p>
+    </div>
+  </div>
+
+  <script src="blocked.js"></script>
+</body>
+
+</html>

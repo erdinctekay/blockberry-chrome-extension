@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Blockberry - Focus Booster",
+	"version": "0.1",
+	"description": "A basic, private, open-source Chrome extension that blocks websites based on a user-defined list. Does not track or collect your data.",
+	"permissions": ["tabs", "storage"],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"action": {
+		"default_popup": "src/popup/popup.html",
+		"default_icon": {
+			"128": "icons/icon-passive-128.png"
+		}
+	},
+	"options_ui": {
+		"page": "src/options/options.html",
+		"open_in_tab": true
+	},
+	"icons": {
+		"128": "icons/icon-active-128.png"
+	}
+}
