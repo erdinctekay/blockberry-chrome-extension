@@ -1,6 +1,6 @@
 # Blockberry - Focus Booster
 
-This is a basic, private, open-source Chrome extension that blocks websites based on a user-defined list to help user's prevent distract sources. Does not track or collect your data. It also supports wildcard domain block.
+This is a basic, privacy-focused, open-source Chrome extension that blocks websites based on a user-defined list to help user's prevent distract sources. Does not track or collect your data. It also supports wildcard domain block.
 
 ## Installation
 
