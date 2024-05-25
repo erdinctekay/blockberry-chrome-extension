@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', initializePopupPage)
 
-function initializePopupPage() {
-	const checkbox = document.getElementById('toggle-switch')
-	const statusMessage = document.getElementById('status-message')
-	const blockButton = document.getElementById('block-button')
+const checkbox = document.getElementById('toggle-switch')
+const statusMessage = document.getElementById('status-message')
+const blockButton = document.getElementById('block-button')
 
+function initializePopupPage() {
 	// load the current state of the block mode
 	chrome.storage.sync.get('blockMode', function (data) {
 		checkbox.checked = data.blockMode
-		statusMessage.textContent = data.blockMode ? 'Block mode is enabled.' : 'Block mode is disabled.'
+		setStatusBarMessage(data.blockMode)
 	})
 
 	// get current tab url
@@ -33,7 +33,7 @@ function initializePopupPage() {
 	// save the new state when the checkbox is toggled
 	checkbox.addEventListener('change', function () {
 		chrome.storage.sync.set({ blockMode: this.checked })
-		statusMessage.textContent = this.checked ? 'Block mode is enabled.' : 'Block mode is disabled.'
+		setStatusBarMessage(this.checked)
 		const slider = document.querySelector('.slider')
 
 		// check all tabs if they are blocked or not
@@ -133,4 +133,8 @@ function enableBlockButton(blockButton) {
 function hideSubInfo() {
 	const subInfo = document.querySelector('.sub-info')
 	subInfo.style.display = 'none'
+}
+
+function setStatusBarMessage(isOnFocus) {
+	statusMessage.textContent = isOnFocus ? 'Focus mode is enabled.' : 'Focus mode is disabled.'
 }
