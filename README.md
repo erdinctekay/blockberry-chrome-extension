@@ -4,7 +4,9 @@ Simple, privacy-focused, open-source Chrome extension that blocks websites based
 
 ## Installation
 
-To install and use this Chrome extension, follow these steps:
+For end users, you just can install it from [here](https://chromewebstore.google.com/detail/blockberry-focus-booster/lokoemddgoafllonnlcbgafmjlajnebh)
+
+For developer mode, follow these steps:
 
 1. Clone or download this repository.
 
